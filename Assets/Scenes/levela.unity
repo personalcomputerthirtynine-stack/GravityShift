@@ -3600,12 +3600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e489356e17fbdbe4f8ff47b18ca7e0da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   levelVelocity: 5
-=======
-  levelVelocity: -5
-  myRigidbody: {fileID: 2080470032}
->>>>>>> origin/main
 --- !u!4 &2080470034
 Transform:
   m_ObjectHideFlags: 0
