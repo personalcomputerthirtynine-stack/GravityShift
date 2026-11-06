@@ -10,6 +10,7 @@ public class MovingPlatformA : MonoBehaviour
     private bool finishWait;
     private float timer = 0f;
     public float moveSpeed;
+    public AudioSource nopeSoundEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,8 @@ public class MovingPlatformA : MonoBehaviour
     void Update()
     {
         if (finishWait)
-        {   if (timer < moveTime)
+        {
+            if (timer < moveTime)
             {
                 myRigidbody.velocity = new Vector2(0, myRigidbody.velocity.y + moveSpeed * Time.deltaTime);
                 timer += Time.deltaTime;
@@ -35,6 +37,8 @@ public class MovingPlatformA : MonoBehaviour
             {
                 finishWait = true;
                 timer = 0f;
+                Debug.Log("Played \"Nope Sound Effect \"");
+                nopeSoundEffect.Play();
             } else
             {
                 timer += Time.deltaTime;

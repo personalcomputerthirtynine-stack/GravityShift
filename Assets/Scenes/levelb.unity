@@ -1788,7 +1788,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 945972514}
   jumpVelocity: 10
-  nextLevel: Menu
+  nextLevel: levelc
   backgroundMusic: {fileID: 1567787292}
   levelMoverObject: {fileID: 2080470031}
   winMusic: {fileID: 665511128}
