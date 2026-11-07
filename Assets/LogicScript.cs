@@ -9,9 +9,11 @@ public class LogicScript : MonoBehaviour
     public AudioSource backgroundMusic;
     public AudioSource startSoundEffect;
     private float timer = 0;
+    private float timer2 = 0;
     private bool startGameActive = false;
     private bool startTutori = false;
     private bool gohome = false;
+    private bool fullScreener = true;
 
     void Update()
     {
@@ -40,6 +42,16 @@ public class LogicScript : MonoBehaviour
             {
                 startGameActive = false;
                 SceneManager.LoadScene("Menu");
+            }
+        }
+        if (fullScreener)
+        {
+            timer2 += Time.deltaTime;
+            if (timer2 >= 0.1f)
+            {
+                Resolution native = Screen.currentResolution;
+                Screen.SetResolution(native.width, native.height, FullScreenMode.FullScreenWindow);
+                fullScreener = false;
             }
         }
     }
