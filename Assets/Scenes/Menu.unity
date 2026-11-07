@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 2053024298}
   - component: {fileID: 2053024297}
   m_Layer: 5
-  m_Name: Button (Legacy) (2)
+  m_Name: close button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1380,7 +1380,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1555996325}
         m_TargetAssemblyTypeName: LogicScript, Assembly-CSharp
-        m_MethodName: startTutor
+        m_MethodName: exitUnity
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

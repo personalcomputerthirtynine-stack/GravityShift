@@ -76,4 +76,9 @@ public class LogicScript : MonoBehaviour
         startSoundEffect.Play();
         gohome = true;
     }
+
+    public void exitUnity()
+    {
+        Application.Quit();
+    }
 }
