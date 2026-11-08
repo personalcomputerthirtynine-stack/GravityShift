@@ -49,7 +49,7 @@ public class LogicScript : MonoBehaviour
             timer2 += Time.deltaTime;
             if (timer2 >= 0.1f)
             {
-                Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
+                Screen.SetResolution(1920, 1080, FullScreenMode.ExclusiveFullScreen);
                 fullScreener = false;
             }
         }
