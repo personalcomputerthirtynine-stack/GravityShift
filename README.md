@@ -1,8 +1,12 @@
+---------------
+Why I made this
+---------------
+
 Just a platformer that I made for GitHub Game Off 2026 game jam.
 
--------
-DETAILS
--------
+-------------
+Level Details
+-------------
 
 There are 3 Levels.
 
