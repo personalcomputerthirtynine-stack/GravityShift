@@ -26,7 +26,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && jumpable && !failLevel)
+        if ((Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0)) && jumpable && !failLevel)
         {
             myRigidbody.velocity = new Vector2(0, jumpVelocity * myRigidbody.gravityScale / 2);
         }
